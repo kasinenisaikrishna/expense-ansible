@@ -30,7 +30,7 @@
 
   - name: unzip/extract the frontend code
     ansible.builtin.unarchive:
-      src: /tmp/frontend.zip # by default ansible thinks this is in ansible server but this file is in remote server i.e. in backend server, Hence we should use remote_src: yes
+      src: /tmp/frontend.zip # by default ansible thinks this is in ansible server but this file is in remote server i.e. in frontend server, Hence we should use remote_src: yes
       dest: /usr/share/nginx/html
       remote_src: yes
 
